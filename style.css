@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  height: 109vh;
+}
+
+.navbar {
+  background-color: ;
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.icon img {
+  color: white;
+  padding-left: 20px;
+  padding-top: 24px;
+  float: left;
+}
+
+.menu {
+  width: 450px;
+  height: 70px;
+  float: left;
+}
+
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style-type: none;
+  margin-left: 15px;
+  margin-top: 27px;
+  font-size: 12px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+.left-menu {
+  width: ;
+  float: left;
+  margin-left: 270px;
+  margin-top: 27px;
+}
+
+/* .search {
+  width: 330px;
+  float: left;
+  margin-left: 270px;
+} */
+
+.srch {
+  margin-top: 20px;
+  height: 30px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.btn {
+  border: 2px solid gray;
+  font-size: 15px;
+  padding: 3px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn:focus {
+  outline: none;
+}
