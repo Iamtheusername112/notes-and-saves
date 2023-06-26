@@ -841,3 +841,41 @@ app.get("/contact", (req, res) => {
 
 let [a, b = 2, c = 5, d = 1] = [3, 4];
 console.log(a, b, c, d); // ==> ???
+
+// here a takes the value of 3 and b automatically takes the value of 4
+
+// In this example we can change the value of one of the parameters in the objects without changing or alternating the whole object
+// let obj = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+// };
+
+// obj = { ...obj, c: "Hello world" };
+// // console.log(...obj, c: 'hello ')
+// console.log(obj);
+
+// DISTRUCTURING DIFFERENT TYPES OF DATAS,,, Let’s have a different types of data nested inside each others:
+
+const customer = {
+  name: {
+    firstName: "ivan",
+    lastName: "zoro",
+  },
+  age: 32,
+  preferences: [
+    {
+      tech: ["cameras", "smartwatches"],
+      books: ["science fiction", "coding"],
+    },
+  ],
+};
+
+const {
+  name: { firstName, lastName },
+  age,
+  preferences: [{ tech, books }],
+} = customer;
+
+console.log(`${firstName}, ${lastName}, ${age}`);
+console.log(`${tech}, ${books}`);
