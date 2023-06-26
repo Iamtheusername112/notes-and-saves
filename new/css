@@ -9,9 +9,9 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-body {
+/* body {
   background-color: #540b51;
-}
+} */
 
 /* nav {
   display: flex;
@@ -39,7 +39,7 @@ body {
   transform: 0.3s;
 } */
 
-.btn-effect1 {
+/* .btn-effect1 {
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
@@ -97,4 +97,4 @@ ul li a {
   font-family: Arial;
   font-weight: bold;
   transition: 0.4s;
-}
+} */

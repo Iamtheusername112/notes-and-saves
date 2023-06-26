@@ -227,13 +227,13 @@
 
 // The .setAttribute() method is very useful for creating new attributes. When we call the method, it will look for the attribute specified in the first parameter name in the element. If the attribute is found, it will change the value. If not, it will create a new attribute using the name and the desired value.
 
-let contentDiv = document.getElementById("google-link");
+// let contentDiv = document.getElementById("google-link");
 
-console.log(contentDiv);
+// console.log(contentDiv);
 
-contentDiv.setAttribute("href", "http://www.google.com.");
-console.log(contentDiv);
-contentDiv.setAttribute("target", "_blank");
+// contentDiv.setAttribute("href", "http://www.google.com.");
+// console.log(contentDiv);
+// contentDiv.setAttribute("target", "_blank");
 // -------------------------------------------------------------------
 
 // let paragraph = document.getElementById("paragraph");
@@ -249,27 +249,595 @@ contentDiv.setAttribute("target", "_blank");
 
 // console.log(h2Tag);
 
-let pElement = document.createElement("p");
-pElement.innerHTML = "Hi there! I am using JavaScript";
+// let pElement = document.createElement("p");
+// pElement.innerHTML = "Hi there! I am using JavaScript";
 
-let body = document.getElementsByTagName("body")[0];
-body.appendChild(pElement);
-console.log(pElement);
-// body.removeChild(pElement);
+// let body = document.getElementsByTagName("body")[0];
+// body.appendChild(pElement);
+// console.log(pElement);
+// // body.removeChild(pElement);
 
-const button = document.getElementById("add-item-button");
-console.log(buttton);
+// const button = document.getElementById("add-item-button");
+// console.log(buttton);
 
-button.onclick = function () {
-  console.log("Button was clicked");
-};
+// button.onclick = function () {
+//   console.log("Button was clicked");
+// };
 
-// with event listeners
+// // with event listeners
 
-button.addEventListener("click", function () {
-  console.log("clicked using event listener");
+// button.addEventListener("click", function () {
+//   console.log("clicked using event listener");
+// });
+
+// input.onchange = function () {
+//   console.log("input was changed");
+// };
+
+// script.js
+
+// const box = document.getElementById("box");
+
+// let topPosition = 100;
+// let leftPosition = 100;
+
+// box.style.position = "absolute";
+// box.style.backgroundColor = "blue";
+// box.style.width = "50px";
+// box.style.height = "50px";
+// box.style.left = `${leftPosition}px`;
+// box.style.top = `${topPosition}px`;
+
+// document.addEventListener("keydown", function (event) {
+//   if (event.code === "ArrowLeft") {
+//     leftPosition -= 50;
+//     box.style.left = `${leftPosition}px`;
+//   } else if (event.code === "ArrowRight") {
+//     leftPosition += 50;
+//     box.style.left = `${leftPosition}px`;
+//   } else if (event.code === "ArrowUp") {
+//     topPosition -= 50;
+//     box.style.top = `${topPosition}px`;
+//   } else if (event.code === "ArrowDown") {
+//     topPosition += 50;
+//     box.style.top = `${topPosition}px`;
+//   }
+// });
+
+// Your code here ...
+
+// -------------------------------Object oriented programming learning-----------------
+
+// const circle = {
+//   radius: 1,
+//   location: {
+//     x: 1,
+//     y: 1,
+//   },
+//   draw: function () {
+//     console.log("draw");
+//   },
+// };
+
+// circle.radius = 3;
+// // circle[draw] = function draw2() {
+// //   console.log(draw2);
+// // };
+
+// circle.draw();
+// class Car {
+//   constructor(name, model, year, color) {
+//     this.name = name;
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//   }
+// Creating a method helps to access the individual elements of the Car class
+// Note also that "method" here simply means a function,, so creating a method means creating s function.
+// So to access the individual properties of the car class, we will create methods according to the property we are trying to access, for instance lets start by accessing the name of the car, the follwed by the model, the year and the color.
+// ----------------------------------------------------------------------------------------------------
+
+//   getName() {
+//     return this.name;
+//   }
+
+//   getModel = () => {
+//     return this.model;
+//   };
+
+//   getYear() {
+//     return this.year;
+//   }
+
+//   getColor = () => {
+//     return this.color;
+//   };
+
+//   addCar(Car2) {
+//     this.Car.push(Car2);
+//   }
+// }
+
+// const Car1 = new Car("Audi", "A690", 2018, "Red");
+
+// const Ford = new Car("Ford", "FRD-2452", 2020, "Blue");
+// Car.addCar(Ford);
+// console.log(Car1.getModel());
+
+// function evenOrOdd(number) {
+//   if (number % 2 === 0) {
+//     console.log("Even number");
+//   } else console.log("Odd number");
+// }
+
+// evenOrOdd();
+
+// How to solve anagramic eamples
+
+// An anagram is a word, a phrase, or a sentence formed from another by rearranging its letters. An example of this is "angel", which is an anagram of "glean".
+
+// Write a function that receives an array of words, and returns the total number of distinct pairs of anagramic words inside it.
+
+// Some examples:
+
+// There are 2 anagrams in the array ["dell", "ledl", "abc", "cba"]
+// There are 7 anagrams in the array ["dell", "ledl", "abc", "cba", "bca", "bac"]
+
+// function anagramCounter (wordsArray) {
+
+//   let wordA;
+//   let wordB;
+//   let counter = 0;
+
+//   for (let i = 0; i < wordsArray.length; i++){
+//      wordA = wordsArray[i].split("").sort().join("");
+
+//      for (let j = i + 1; j < wordsArray.length; j++){
+//      wordB = wordsArray[j].split("").sort().join("");
+//     if(wordA === wordB) {
+//       counter++;
+//     };
+//   }
+
+//   }
+
+//   return counter;
+// }
+
+// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+// Note: input will never be an empty string
+
+/*string of digits --const String = "12345678";
+ */
+
+// -------------------------JAVASCRIPT PROMISES---------------------------------------------
+
+// function func1() {
+//   console.log("HI");
+// }
+
+// function func2() {
+//   console.log("Goodbye");
+// }
+
+// func1();
+// func2();
+
+// const directions = [
+//   "Starting point: Ironhack Madrid",
+//   "➔ Turn right toward P. de la Chopera",
+//   "← At the roundabout, take the 1st exit onto P. de la Chopera",
+//   "* Lune Creperie P. de la Chopera 33, Madrid",
+// ];
+
+// function obtainDirections(step) {
+//   return new Promise(function (resolve, reject) {
+//     // setTimeout(() => {
+//     console.log(directions[step]);
+
+//     if (!directions[step]) reject("Instructions not found.");
+//     else resolve();
+//     // }, 2000);
+//   });
+// }
+
+// obtainDirections(0)
+//   .then(() => obtainDirections(1))
+//   .then(() => obtainDirections(2))
+//   .then(() => obtainDirections(3))
+//   .then(() => console.log("You arrived at your destination!"))
+//   .catch((err) => console.log(err));
+
+// const pr7 = new Promise((resolve, reject) => {
+//   setTimeout(() => resolve("A"), 2000);
+// });
+
+// pr7
+//   .then((value1) => {
+//     console.log("1. then(): ", value1);
+//     throw new Error("FIRST ERROR");
+//   })
+//   .catch((err) => {
+//     console.error("1. catch(): ", err);
+//     return "Hello from catch";
+//   })
+//   .then((value2) => {
+//     console.log("2. then(): ", value2);
+//     throw new Error("SECOND ERROR");
+//   })
+//   .catch((err) => {
+//     console.error("2. catch(): ", err);
+//   });
+
+// let promise = new Promise((resolve, reject) => {
+//   let a = 1 + 2;
+//   if (a == 2) {
+//     resolve("sucess!");
+//   }
+//   reject("Failed!!");
+// });
+
+// promise
+//   .then((message) => {
+//     console.log("This is the" + message);
+//   })
+//   .catch((message) => {
+//     console.log("This is an error " + message);
+//   });
+
+// index.js
+
+// async function displayMissionPatches() {
+//   try {
+//     const response = await fetch("https://api.spacexdata.com/v4/launches");
+//     const jsonResponse = await response.json();
+//
+
+//     console.log("Parsed response: ", jsonResponse);
+//   } catch (err) {
+//     // Handle error or a rejected Promise
+//     console.log("Something went wrong!", error);
+//   }
+// }
+
+// displayMissionPatches();
+
+// const displayMissionPatches = async (limit = 10) {
+//   try {
+//       const url = ("https://api.spacexdata.com/v4/launches");
+//       const response = await fetch(url);
+//       const data = await response.json();
+
+//       const sliceData = data.slice(0, limit);
+//       const app = document.getElementById("app");
+//       const rocketList = document.createElement("ul");
+
+//       sliceData.forEach((element) => {
+//           const { name, links } = element;
+
+//           const listItem = document.createElement("li");
+//           const image = document.createElement("img");
+
+//           imgElement.setAttribute("src", links.patch.small);
+
+//           const title = document.createElement("h2");
+//           title.textContent = name;
+//           listItem.appendChild("image");
+//           listItem.appendChild("title");
+//           rockList.appendChild("listItem");
+
+//       })
+
+// }
+
+// displayMissionPatches();
+
+// async function displayMissionPatches(limit = 0) {
+//   try {
+//     const response = await fetch("https://api.spacexdata.com/v4/launches");
+//     const jsonResponse = await response.json();
+
+//     console.log(jsonResponse);
+//     const launchesToDisplay = jsonResponse.slice(0, limit);
+
+//     launchesToDisplay.forEach((launchObj) => {
+//       const patchImage = launchObj.links.patch.small;
+//       const imgElement = document.createElement("img");
+
+//       imgElement.setAttribute("src", patchImage);
+//       imgElement.setAttribute("width", 200);
+//       document.body.appendChild(imgElement);
+//       const { name, links } = element;
+
+//       const listItem = document.createElement("li");
+//       const image = document.createElement("img");
+
+//       imgElement.setAttribute("src", links.patch.small);
+
+//       const title = document.createElement("h2");
+//       title.textContent = name;
+//       listItem.appendChild(image);
+//       listItem.appendChild(title);
+//       rockList.appendChild(listItem);
+//     });
+//   } catch (error) {
+//     // Handle error or a rejected Promise
+//     console.log("Something went wrong!", error);
+//   }
+// }
+
+// displayMissionPatches(10);
+
+// async function displayMissionPatches(limit = 0) {
+//   try {
+//     const response = await fetch("https://api.spacexdata.com/v4/launches");
+//     const jsonResponse = await response.json();
+
+//     console.log(jsonResponse);
+//     const launchesToDisplay = jsonResponse.slice(0, limit);
+
+//     launchesToDisplay.forEach((launchObj) => {
+//       const patchImage = launchObj.links.patch.small;
+//       const imgElement = document.createElement("img");
+
+//       imgElement.setAttribute("src", patchImage);
+//       imgElement.setAttribute("width", 200);
+//       document.body.appendChild(imgElement);
+//     });
+//   } catch (error) {
+//     // Handle error or a rejected Promise
+//     console.log("Something went wrong!", error);
+//   }
+// }
+
+// displayMissionPatches(10);
+
+// callback function
+
+// function newfunc1(callback) {
+//   console.log("i am always a new function");
+//   //   console.log(newfunc1);
+//   callback();
+// }
+
+// // newfunc1();
+
+// function func2() {
+//   console.log("treat me like a secod class citized, thanks");
+// }
+// // func2();
+
+// newfunc1(func2);
+
+// JAVASCRIPT PROMISES
+
+// let stocks = {
+//   Fruits: ["strawberry", "grapes", "banana", "apple"],
+
+//   liquid: ["water", "ice"],
+//   holder: ["cone", "cup", "stick"],
+//   toppings: ["chocolate", "peanuts"],
+// };
+
+// // console.log(stocks.toppings[1]);
+
+// let is_shop_open = true;
+
+// let order = (time, work) => {
+//   return new Promise((resolve, reject) => {
+//     if (is_shop_open) {
+//       setTimeout(() => {
+//         resolve(work());
+//       }, time);
+//     } else {
+//       reject(console.log("our shop is closed"));
+//     }
+//   });
+// };
+
+// order(2000, () => console.log(`${stocks.Fruits[0]} was selected`))
+//   .then(() => {
+//     return order(0000, () => console.log("production has started"));
+//   })
+//   .then(() => {
+//     return order(2000, () => console.log("The fruit was chopped"));
+//   })
+//   .then(() => {
+//     return order(1000, () =>
+//       console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`)
+//     );
+//   })
+//   .then(() => {
+//     return order(1000, () => console.log("Machine was started"));
+//   })
+//   .then(() => {
+//     return order(2000, () => console.log(`${stocks.holder[1]} was selected`));
+//   })
+//   .then(() => {
+//     return order(3000, () => console.log(`${stocks.toppings[1]} was selected`));
+//   })
+//   .then(() => {
+//     return order(2000, () => console.log("Ice creame served"));
+//   })
+//   .catch(() => {
+//     console.log("customer left");
+//   })
+//   .finally(() => {
+//     console.log("Day is ended, shop closed");
+//   });
+
+// -----------------JAVASCRIPT ASYNC / await
+
+// let stocks = {
+//   Fruits: ["strawberry", "grapes", "banana", "apple"],
+
+//   liquid: ["water", "ice"],
+//   holder: ["cone", "cup", "stick"],
+//   toppings: ["chocolate", "peanuts"],
+// };
+
+// let is_shop_open = true;
+
+// let toppingsChoice = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(console.log("which toppings would you love"));
+//     }, 3000);
+//   });
+// };
+
+// async function kitchen() {
+//   console.log("A");
+//   console.log("B");
+
+//   await toppingsChoice();
+
+//   console.log("C");
+//   console.log("D");
+//   console.log("E");
+// }
+
+// kitchen();
+
+// let stocks = {
+//   Fruits: ["strawberry", "grapes", "banana", "apple"],
+
+//   liquid: ["water", "ice"],
+//   holder: ["cone", "cup", "stick"],
+//   toppings: ["chocolate", "peanuts"],
+// };
+
+// let is_shop_open = true;
+
+// function time(ms) {
+//   return new Promise((resolve, reject) => {
+//     if (is_shop_open) {
+//       setTimeout(resolve, ms);
+//     } else {
+//       reject(console.log("shop is closed"));
+//     }
+//   });
+// }
+
+// async function kitchen() {
+//   try {
+//     await time(2000);
+//     console.log(`${stocks.Fruits[0]} was selected`);
+
+//     console.log("Start the production");
+
+//     await time(2000);
+//     console.log("Cut fruit");
+
+//     await time(1000);
+//     console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} was added`);
+
+//     await time(1000);
+//     console.log("Machine was started");
+
+//     await time(2000);
+//     console.log(`${stocks.holder[2]} was selected`);
+
+//     await time(3000);
+//     console.log(`${stocks.toppings[2]} was selected`);
+
+//     await time(2000);
+//     console.log("Ice creame was served");
+//   } catch (error) {
+//     console.log("Customer left", error);
+//   } finally {
+//     console.log("Day ended, shop is closed");
+//   }
+// }
+
+// kitchen();
+
+// console.log("Hello world");
+
+// // after we installed "colors" npm package, we need to import it (require it)
+// // in the file where we are planning to use it
+// const myColors = require("colors/safe");
+
+// console.log(myColors.yellow("hello")); // outputs green text
+// console.log(myColors.red.underline("i like cake and pies")); // outputs red underlined text
+// console.log(myColors.inverse("inverse the color")); // inverses the color
+// console.log(myColors.rainbow("OMG Rainbows!")); // outputs text in colors of a rainbow
+// console.log(myColors.trap("Run the trap")); // Outputs the text using the trap font
+
+// const cows = require("cows");
+// cows();
+
+// const express = require("express");
+// const app = express();
+// const port = 3000;
+
+// app.get("/", (req, res) => {
+//   res.send("Hello World!");
+// });
+
+/**TO CREATE ROUTES FOR DIFFERENT PAGES USE THE TEMPLATE BELOW AND PASS IN THE PATH 
+ * 
+ * 
+ * app.get("/about", (req, res) => {
+  res.send("Hello World!");
 });
 
-input.onchange = function () {
-  console.log("input was changed");
-};
+app.get("/contact", (req, res) => {
+  res.send("Hello World!");
+});
+
+
+ * 
+ */
+
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
+
+// destructuring
+
+// const person = {
+//   name: "francis",
+//   age: 23,
+//   city: "BERLIN",
+// };
+
+// console.log(person);
+
+// ------------------------------------------------------------------------
+// Destructuring Objects
+
+// const data = {
+//   name: {
+//     firstName: "ana",
+//     lastName: "marino",
+//   },
+//   isStudent: true,
+//   favoriteFootballTeam: "fc barcelona",
+//   hometown: {
+//     city: "buenos aires",
+//     country: "argentina",
+//   },
+// };
+
+// Given the previous object data, use the object destructuring to be able to print student first and last name, favorite football club, as well as the city and the country this student is coming from.
+
+// let {
+//   name: { firstName, lastName },
+//   isStudent,
+//   hometown: { city, country },
+// } = data;
+
+// console.log(`${firstName} ${lastName}  ${city} ${country}`);
+
+// Destructuring ARRAYS
+
+// const [a, b] = [1];
+// console.log(a * b); // <== ???
+
+// const [a, b = 1] = [2];
+// console.log(a * b); // <== ???
+
+let [a, b = 2, c = 5, d = 1] = [3, 4];
+console.log(a, b, c, d); // ==> ???
